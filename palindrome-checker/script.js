@@ -13,6 +13,8 @@ const checkPalindrome = () => {
 
   const reversedInput = cleanedInput.split("").reverse().join("");
 
+  result.classList.add("result-border");
+
   if (cleanedInput === reversedInput) {
     result.textContent = `${input} is a palindrome`;
   } else {

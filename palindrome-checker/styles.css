@@ -61,5 +61,8 @@ form {
 #result {
   margin-top: 20px;
   padding: 12px;
+}
+
+.result-border {
   border: 1px solid var(--highlight-color);
 }
