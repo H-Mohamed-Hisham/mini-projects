@@ -1,0 +1,65 @@
+:root {
+  /* colors */
+  --primary-color: #dfdfe2;
+  --app-background-color: #4d4d62;
+  --background-color: #1b1b32;
+  --highlight-color: #f1be32;
+
+  /* font-families */
+  --font-family: "Lato", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--app-background-color);
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  min-width: 400px;
+  max-width: 650px;
+  height: auto;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+#text-input,
+#check-btn {
+  padding: 6px;
+}
+
+#check-btn {
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 12px;
+  border: 1px solid var(--highlight-color);
+}
